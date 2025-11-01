@@ -1,0 +1,10 @@
+.mapSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mapContainer {
+  height: 600px;
+  aspect-ratio: 1.5;
+}

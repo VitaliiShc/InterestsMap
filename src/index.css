@@ -1,41 +1,96 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --background: #242424;
+  --font-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --transition: 300ms ease-in-out;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+html,
+body,
+#root {
   min-width: 320px;
+  height: 100%;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--font-color);
+  background-color: var(--background);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header {
+  flex-shrink: 0;
 }
 
-button {
+main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+header,
+main,
+footer,
+p,
+a,
+h1,
+div,
+span,
+input,
+ul,
+li {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.VisuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -65,4 +120,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

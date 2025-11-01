@@ -1,0 +1,30 @@
+.link {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+  color: dodgerblue;
+  transition: color var(--transition);
+
+  &:is(:hover, :focus-visible) {
+    color: royalblue;
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 1px;
+  background-color: royalblue;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--transition);
+}
