@@ -2,5 +2,20 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
-  padding-inline: 80px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-inline: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main {
+    padding-inline: 80px;
+  }
 }

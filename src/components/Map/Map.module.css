@@ -1,0 +1,33 @@
+.mapSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.input {
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding-inline: 12px;
+  color: var(--background);
+
+  &::placeholder {
+    color: grey;
+  }
+}
+
+.mapWrap {
+  width: 100%;
+  flex: 1;
+  min-height: 300px;
+  height: calc(100vh - 160px);
+  display: flex;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}

@@ -1,7 +1,9 @@
 export interface User {
   id: number;
   name: string;
-  lat: number;
-  lon: number;
+  location: {
+    lat: number;
+    lon: number;
+  };
   interests: string[];
 }

@@ -1,9 +1,9 @@
-import React from 'react';
+import type { AnchorHTMLAttributes, ReactNode } from 'react';
 import styles from './Link.module.css';
 
-type LinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export function Link({ href, children }: LinkProps) {

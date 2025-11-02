@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   place-items: center;
-  height: 20px;
+  height: fit-content;
   border-top: 1px solid grey;
 }
 
@@ -11,5 +11,17 @@
   width: 100%;
   max-width: 1440px;
   font-size: 12px;
-  padding-inline: 80px;
+  padding-inline: 20px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-inline: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content {
+    padding-inline: 80px;
+  }
 }
